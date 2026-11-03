@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f6" />
+  <meta name="description" content="A dreamy Cinnamoroll birthday surprise made especially for Marklie." />
+  <title>Happy Birthday, Marklie! ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="sparkle-field" id="sparkleField" aria-hidden="true"></div>
+  <div class="background-orbit orbit-one" aria-hidden="true"></div>
+  <div class="background-orbit orbit-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Happy Birthday home" data-go-home>
+      <span class="wordmark-icon" aria-hidden="true">✦</span>
+      <span>HAPPY BIRTHDAY</span>
+    </a>
+    <div class="header-note"><span class="status-dot"></span> A LITTLE SURPRISE FOR <span data-celebrant>MARKLIE</span></div>
+  </header>
+
+  <main>
+    <!-- PAGE ONE: birthday cake and interactive candle -->
+    <section class="page page-home is-active" id="home" aria-labelledby="homeTitle">
+      <div class="home-layout">
+        <div class="intro-copy">
+          <p class="eyebrow"><span>♡</span> TODAY IS ALL ABOUT YOU <span>♡</span></p>
+          <h1 id="homeTitle">Happy birthday,<br /><span class="name-script" data-celebrant>Marklie</span><span class="title-sparkle" aria-hidden="true">✦</span></h1>
+          <p class="intro-description">A little sweetness, a sky full of wishes, and so much love. This tiny birthday universe was made especially for you, Marklie.</p>
+          <div class="intro-actions">
+            <button class="button button-primary" id="lightCandleButton" type="button">
+              <span class="button-icon" aria-hidden="true">♡</span><span class="button-label">Make a wish &amp; blow out</span>
+            </button>
+            <button class="button button-secondary" id="openLettersButton" type="button">
+              Open your birthday letters <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <p class="tiny-note" id="wishHint">Close your eyes, make a wish, then blow out the candle. ♡</p>
+          <div class="home-love-note"><span>✧</span> MADE WITH LOVE, JUST FOR MARKLIE <span>✧</span></div>
+        </div>
+
+        <div class="birthday-scene" aria-label="A decorated pink birthday cake with an interactive candle and two Cinnamoroll friends">
+          <div class="scene-aura" aria-hidden="true"></div>
+          <div class="scene-label label-left">a little sugar &amp; stardust <span>✧</span></div>
+          <div class="floating-heart heart-one" aria-hidden="true">♡</div>
+          <div class="floating-heart heart-two" aria-hidden="true">♥</div>
+          <div class="floating-heart heart-three" aria-hidden="true">♡</div>
+          <div class="floating-star star-one" aria-hidden="true">✦</div>
+          <div class="floating-star star-two" aria-hidden="true">✧</div>
+          <div class="floating-star star-three" aria-hidden="true">✷</div>
+          <div class="cloud cloud-back cloud-back-one" aria-hidden="true"></div>
+          <div class="cloud cloud-back cloud-back-two" aria-hidden="true"></div>
+
+          <img class="mascot mascot-cloud" src="./assets/cinnamoroll-cloud-hug.png" alt="Cinnamoroll hugging a blue star" width="612" height="408" loading="eager" fetchpriority="high" decoding="async" />
+          <img class="mascot mascot-bow" src="./assets/cinnamoroll-bow-star.png" alt="Cinnamoroll holding a yellow star with a blue bow" width="612" height="408" loading="eager" decoding="async" />
+
+          <div class="cake-wrap">
+            <div class="cake-shadow" aria-hidden="true"></div>
+            <div class="cake-plate"><span class="plate-rim" aria-hidden="true"></span></div>
+            <div class="cake">
+              <div class="cake-top"></div>
+              <div class="cake-icing-drip drip-one"></div>
+              <div class="cake-icing-drip drip-two"></div>
+              <div class="cake-icing-drip drip-three"></div>
+              <div class="cake-side-decoration">♡　✦　♡　✦　♡</div>
+              <div class="cake-bottom-pipe"></div>
+              <div class="cake-sprinkles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="cake-berry berry-one" aria-hidden="true"></div>
+              <div class="cake-berry berry-two" aria-hidden="true"></div>
+              <div class="cake-berry berry-three" aria-hidden="true"></div>
+            </div>
+            <div class="candle-wrap candle-lit" id="candle" role="button" tabindex="0" aria-label="Blow out birthday candle">
+              <div class="candle-stick"><span class="candle-stripe"></span><span class="candle-stripe stripe-two"></span></div>
+              <div class="wick"></div>
+              <div class="flame" id="flame" aria-hidden="true"><span></span></div>
+              <div class="flame-glow" id="flameGlow" aria-hidden="true"></div>
+              <span class="candle-smoke" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="scene-caption"><span class="caption-line"></span> one wish, a thousand little stars <span class="caption-line"></span></div>
+          <div class="scene-label label-right">the sweetest day ever <span>♡</span></div>
+          <div class="scene-orbit orbit-a" aria-hidden="true"></div>
+          <div class="scene-orbit orbit-b" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="page-footnote"><span>01</span><span class="footnote-line"></span><span>THE LITTLE CELEBRATION</span></div>
+      <button class="scroll-cue" id="scrollCue" type="button" aria-label="Go to birthday letters">↓</button>
+    </section>
+
+    <!-- PAGE TWO: four named, themed letter designs -->
+    <section class="page page-letters" id="letters" aria-labelledby="lettersTitle" hidden>
+      <div class="letters-heading">
+        <p class="eyebrow"><span>✉</span> SPECIAL DELIVERY <span>✧</span></p>
+        <h2 id="lettersTitle">Four letters, <span>four little worlds</span></h2>
+        <p>Choose a name to preview its personal envelope and letter stationery.</p>
+      </div>
+
+      <div class="mailbox-scene">
+        <div class="mailbox-topline"><span>THE BIRTHDAY POST OFFICE</span><span class="mailbox-open-sign"><i></i> 4 PERSONAL LETTERS</span></div>
+        <div class="letters-grid">
+          <button class="letter-card letter-sean" type="button" data-letter="0" aria-label="Open Sean's blue letter design">
+            <span class="letter-number">LETTER 01</span>
+            <span class="theme-corner" aria-hidden="true">✦</span>
+            <span class="envelope-art" aria-hidden="true"><span class="envelope-back"></span><span class="envelope-paper"></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="envelope-motif">S</span><span class="envelope-seal">✦</span></span>
+            <span class="letter-card-title">Sean</span>
+            <span class="letter-card-subtitle">blue skies • bold wishes</span>
+            <span class="letter-open-hint">preview letter ↗</span>
+          </button>
+
+          <button class="letter-card letter-stephanie" type="button" data-letter="1" aria-label="Open Stephanie's red and white polka-dot letter design">
+            <span class="letter-number">LETTER 02</span>
+            <span class="theme-corner" aria-hidden="true">♥</span>
+            <span class="envelope-art" aria-hidden="true"><span class="envelope-back"></span><span class="envelope-paper"></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="envelope-motif">♡</span><span class="envelope-seal">♥</span></span>
+            <span class="letter-card-title">Stephanie</span>
+            <span class="letter-card-subtitle">red bows • polka dots</span>
+            <span class="letter-open-hint">preview letter ↗</span>
+          </button>
+
+          <button class="letter-card letter-carryl" type="button" data-letter="2" aria-label="Open Carryl's violet and silver chain letter design">
+            <span class="letter-number">LETTER 03</span>
+            <span class="theme-corner" aria-hidden="true">⛓</span>
+            <span class="envelope-art" aria-hidden="true"><span class="envelope-back"></span><span class="envelope-paper"></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="envelope-motif">C</span><span class="envelope-seal">⛓</span></span>
+            <span class="letter-card-title">Carryl</span>
+            <span class="letter-card-subtitle">violet dreams • silver chains</span>
+            <span class="letter-open-hint">preview letter ↗</span>
+          </button>
+
+          <button class="letter-card letter-nissi" type="button" data-letter="3" aria-label="Open Nissi's green grass and bee letter design">
+            <span class="letter-number">LETTER 04</span>
+            <span class="theme-corner" aria-hidden="true">🐝</span>
+            <span class="envelope-art" aria-hidden="true"><span class="envelope-back"></span><span class="envelope-paper"></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="envelope-motif">N</span><span class="envelope-seal">✿</span></span>
+            <span class="letter-card-title">Nissi</span>
+            <span class="letter-card-subtitle">green grass • busy bees</span>
+            <span class="letter-open-hint">preview letter ↗</span>
+          </button>
+        </div>
+        <div class="mailbox-bottom"><span>♡</span> A DIFFERENT LITTLE DESIGN FOR EVERY NAME <span>♡</span></div>
+      </div>
+
+      <div class="letters-footer">
+        <button class="button button-secondary back-home-button" type="button" data-go-home>← Back to the birthday</button>
+        <p>The stationery is ready. The personal messages can be added later. ♡</p>
+      </div>
+      <div class="page-footnote"><span>02</span><span class="footnote-line"></span><span>THE BIRTHDAY POST OFFICE</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>made especially for Marklie ♡</span><span>☁　✦　☁</span></footer>
+
+  <!-- Letter preview dialog; the message areas are intentionally placeholders. -->
+  <div class="letter-overlay" id="letterOverlay" hidden>
+    <section class="letter-modal theme-sean" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalBody">
+      <button class="modal-close" id="closeLetterButton" type="button" aria-label="Close letter">×</button>
+      <div class="modal-paperclip" aria-hidden="true"></div>
+      <div class="modal-stamp" id="modalStamp">S</div>
+      <p class="modal-kicker" id="modalKicker">BLUE SKIES • BIG WISHES</p>
+      <h3 id="modalTitle">Dear Sean,</h3>
+      <div class="modal-divider"><span>✧</span></div>
+      <div class="modal-stationery" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="modal-body" id="modalBody">This letter space is ready for Sean. Your personal message will be added here later.</p>
+      <p class="modal-signoff" id="modalSignoff">sealed with a little blue magic, ♡</p>
+      <div class="modal-bottom-decoration" id="modalBottomDecoration" aria-hidden="true">✦　♡　✦　♡　✦</div>
+      <div class="modal-navigation">
+        <button class="modal-nav-button" id="prevLetterButton" type="button">← previous</button>
+        <span id="modalCounter">01 / 04</span>
+        <button class="modal-nav-button" id="nextLetterButton" type="button">next →</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
